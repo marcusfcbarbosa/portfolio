@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import Component_Profile from '../Profile/Component_Profile';
 import Component_About from '../About/Component_About';
 import  Component_Skill from '../Skill/Component_Skill';
+import Component_DesignPattern from '../DesignPattern/Component_DesignPattern';
 import Component_Portfolio from '../Portfolio/Component_Portfolio';
 import Component_Experience from '../Experience/Component_Experience';
 import Component_Education  from '../Education/Component_Education';
@@ -32,6 +33,7 @@ class  Component_Conteudo extends Component{
                     <Component_Profile />
                     <Component_About/>
                     <Component_Skill/>
+                    <Component_DesignPattern />
                     <Component_Portfolio/>
                     <Component_Experience />
                     <Component_Education />
