@@ -16,8 +16,8 @@ class  Component_MenuSuperior extends Component{
                                             <ul className="navbar-nav">
                                             <li className="nav-item"><a className="nav-link smooth-scroll" href="#about">About</a></li>
                                             <li className="nav-item"><a className="nav-link smooth-scroll" href="#skill">Skills</a></li>
-                                            <li className="nav-item"><a className="nav-link smooth-scroll" href="#designPattern">Design Patterns</a></li>
-                                            <li className="nav-item"><a className="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
+                                            <li className="nav-item"><a className="nav-link smooth-scroll" href="#designPattern">Patterns</a></li>
+                                            
                                             <li className="nav-item"><a className="nav-link smooth-scroll" href="#experience">Experience</a></li>
                                             <li className="nav-item"><a className="nav-link smooth-scroll" href="#contact">Contact</a></li>
                                             </ul>

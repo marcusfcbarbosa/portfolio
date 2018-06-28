@@ -1,5 +1,5 @@
 import React , {Component} from 'react';
-import bridgeImage from '../../images/imagemFundo.jpg';
+import bridgeImage from '../../images/imagemFundo2.jpg';
 
 class Component_Profile extends Component{
 render(){
@@ -17,15 +17,12 @@ return(
                                     </a>
                                 </div>
                                 <div className="h2 title">Marcus FC Barbosa</div>
-                                <p className="category text-white">.Net Developer</p>
+                                <p className="category text-white">Full Stack .Net Developer</p>
                                 <a className="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
                             </div>
                             </div>
                             <div className="section">
-                            <div className="container">
-                                <div className="button-container"><a className="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Facebook">
-                                <i className="fa fa-facebook"></i></a><a className="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Twitter"><i className="fa fa-twitter"></i></a><a className="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Google+"><i className="fa fa-google-plus"></i></a><a className="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Instagram"><i className="fa fa-instagram"></i></a></div>
-                            </div>
+                            
                             </div>
                         </div>
                  </div>

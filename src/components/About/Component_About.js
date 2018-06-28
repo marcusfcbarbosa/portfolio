@@ -11,8 +11,7 @@ class  Component_About extends Component {
                     <div className="col-lg-6 col-md-12">
                         <div className="card-body">
                             <div className="h4 mt-0 title">About</div>
-                            <p>Hello! My name is Marcus. I`m originally from Brazil and i like to think that i´am a software developer.</p>
-                            <p>My favorite hobby is to travel and i love it</p>
+                            <p>Computer engineer. <br/> Working whit the last 7 years and 7 months whit web development</p> 
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12">
