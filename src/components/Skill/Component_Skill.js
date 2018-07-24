@@ -17,10 +17,10 @@ class Component_Skill extends Component {
                         <div className="progress-bar progress-bar-primary" data-aos="progress-full" 
                         data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" 
                         aria-valuemin="0" aria-valuemax="100" 
-                        style={{flex: 0.8}}
+                        style={{flex: 1}}
                         >
                      </div>
-                     <span className="progress-value">80%</span>
+                     <span className="progress-value">100%</span>
                   </div>
                </div>
             </div>
@@ -80,10 +80,10 @@ class Component_Skill extends Component {
             data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" 
             role="progressbar" aria-valuenow="60" aria-valuemin="0" 
             aria-valuemax="100" 
-            style={{flex: 0.8}}
+            style={{flex: 0.7}}
             >
          </div>
-         <span className="progress-value">80%</span>
+         <span className="progress-value">70%</span>
       </div>
    </div>
 </div>
@@ -94,9 +94,9 @@ class Component_Skill extends Component {
          <div className="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
          data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" 
          aria-valuemax="100" 
-         style={{flex: 0.85}}>
+         style={{flex: 0.7}}>
       </div>
-      <span className="progress-value">85%</span>
+      <span className="progress-value">70%</span>
    </div>
 </div>
 </div>
@@ -111,10 +111,10 @@ class Component_Skill extends Component {
             data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" 
             role="progressbar" aria-valuenow="60" aria-valuemin="0" 
             aria-valuemax="100" 
-            style={{flex: 0.8}}
+            style={{flex: 0.7}}
             >
          </div>
-         <span className="progress-value">80%</span>
+         <span className="progress-value">70%</span>
       </div>
    </div>
 </div>
@@ -125,9 +125,9 @@ class Component_Skill extends Component {
          <div className="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10"
          data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" 
          aria-valuemax="100" 
-         style={{flex: 0.85}}>
+         style={{flex: 0.7}}>
       </div>
-      <span className="progress-value">85%</span>
+      <span className="progress-value">70%</span>
    </div>
 </div>
 </div>
@@ -170,9 +170,9 @@ class Component_Skill extends Component {
          <div className="progress-bar progress-bar-primary" data-aos="progress-full" 
          data-aos-offset="10" data-aos-duration="2000" role="progressbar" 
          aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-         style={{flex: 0.85}}>
+         style={{flex: 0.65}}>
       </div>
-      <span className="progress-value">85%</span>
+      <span className="progress-value">65%</span>
    </div>
 </div>
 </div>
@@ -198,9 +198,9 @@ class Component_Skill extends Component {
          <div className="progress-bar progress-bar-primary" data-aos="progress-full" 
          data-aos-offset="10" data-aos-duration="2000" role="progressbar" 
          aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-         style={{flex: 0.85}}>
+         style={{flex: 0.95}}>
       </div>
-      <span className="progress-value">85%</span>
+      <span className="progress-value">95%</span>
    </div>
 </div>
 </div>
@@ -213,9 +213,9 @@ class Component_Skill extends Component {
             <div className="progress-bar progress-bar-primary" data-aos="progress-full" 
             data-aos-offset="10" data-aos-duration="2000" role="progressbar" 
             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-            style={{flex: 0.70}}>
+            style={{flex: 0.85}}>
          </div>
-         <span className="progress-value">70%</span>
+         <span className="progress-value">85%</span>
       </div>
    </div>
 </div>
@@ -226,9 +226,9 @@ class Component_Skill extends Component {
          <div className="progress-bar progress-bar-primary" data-aos="progress-full" 
          data-aos-offset="10" data-aos-duration="2000" role="progressbar" 
          aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-         style={{flex: 0.85}}>
+         style={{flex: 0.3}}>
       </div>
-      <span className="progress-value">85%</span>
+      <span className="progress-value">30%</span>
    </div>
 </div>
 </div>

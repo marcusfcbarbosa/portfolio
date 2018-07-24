@@ -13,7 +13,7 @@ return(
                             <div className="container">
                             <div className="content-center">
                                 <div className="cc-profile-image"><a href="#">
-                                    <img src={require('../../images/marcus4.jpg')} alt="Image"  />
+                                    <img src={require('../../images/marcus.jpg')} alt="Image"  />
                                     </a>
                                 </div>
                                 <div className="h2 title">Marcus FC Barbosa</div>

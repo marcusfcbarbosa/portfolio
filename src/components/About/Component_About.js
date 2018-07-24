@@ -11,7 +11,8 @@ class  Component_About extends Component {
                     <div className="col-lg-6 col-md-12">
                         <div className="card-body">
                             <div className="h4 mt-0 title">About</div>
-                            <p>Computer engineer. <br/> Working whit the last 7 years and 7 months whit web development</p> 
+                            <p>Computer engineer. <br/> Working whith the last 7 years whit web development</p> 
+                            <p><a href="https://github.com/marcusfcbarbosa">GitHub</a></p>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12">
@@ -19,7 +20,7 @@ class  Component_About extends Component {
                             <div className="h4 mt-0 title">Basic Information</div>
                             <div className="row">
                                 <div className="col-sm-4"><strong className="text-uppercase">Age:</strong></div>
-                                <div className="col-sm-8">34</div>
+                                <div className="col-sm-8">33</div>
                             </div>
                             <div className="row mt-3">
                                 <div className="col-sm-4"><strong className="text-uppercase">Email:</strong></div>

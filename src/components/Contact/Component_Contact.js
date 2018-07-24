@@ -1,5 +1,5 @@
 import React , { Component } from 'react';
-import Background from '../../images/staticmap.png';
+import Background from '../../images/staticImage.PNG';
 
 class  Component_Contact extends Component {
     render(){
@@ -16,7 +16,7 @@ class  Component_Contact extends Component {
                                      <div className="row">
                                          <div className="col-md-6">
                                          <div className="card-body">
-                                             <form action="https://formspree.io/your@email.com" method="POST">
+                                             <form action="#" method="POST">
                                                  <div className="p pb-3"><strong>Feel free to contact me </strong></div>
                                                  <div className="row mb-3">
                                                      <div className="col">
@@ -57,11 +57,11 @@ class  Component_Contact extends Component {
                                          <div className="col-md-6">
                                          <div className="card-body">
                                              <p className="mb-0"><strong>Address </strong></p>
-                                             <p className="pb-2">140, City Center, New York, U.S.A</p>
+                                             <p className="pb-2">15, Floresta Street, Atibaia - SP, BRAZIL</p>
                                              <p className="mb-0"><strong>Phone</strong></p>
-                                             <p className="pb-2">+1718-111-0011</p>
+                                             <p className="pb-2">+55 11 9 9999 9999</p>
                                              <p className="mb-0"><strong>Email</strong></p>
-                                             <p>anthony@company.com</p>
+                                             <p>marcusfcbarbosa@hotmail.com</p>
                                          </div>
                                          </div>
                                      </div>

@@ -8,7 +8,7 @@ class Component_Portfolio extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 ml-auto mr-auto">
-                            <div className="h4 text-center mb-4 title">Portfolio</div>
+                            <div className="h4 text-center mb-4 title">Companies i´ve worked  </div>
                             <div className="nav-align-center">
                             <ul className="nav nav-pills nav-pills-primary" role="tablist">
                                 <li className="nav-item"><a className="nav-link active" data-toggle="tab" href="#web-development" role="tablist">
@@ -81,7 +81,8 @@ class Component_Portfolio extends Component {
                             </div>
                             </div>
                         </div>
-                        <div className="tab-pane" id="graphic-design" role="tabpanel">
+                        {/* 
+                         <div className="tab-pane" id="graphic-design" role="tabpanel">
                             <div className="ml-auto mr-auto">
                             <div className="row">
                                 <div className="col-md-6">
@@ -135,7 +136,13 @@ class Component_Portfolio extends Component {
                             </div>
                             </div>
                         </div>
-                        <div className="tab-pane" id="Photography" role="tabpanel">
+                        
+                        
+                        
+                        */}
+                    
+                       {/* 
+                     <div className="tab-pane" id="Photography" role="tabpanel">
                             <div className="ml-auto mr-auto">
                             <div className="row">
                                 <div className="col-md-6">
@@ -189,6 +196,14 @@ class Component_Portfolio extends Component {
                             </div>
                             </div>
                         </div>
+
+                    
+                    */}
+
+                       
+
+
+
                     </div>
                 </div>
                 </div>

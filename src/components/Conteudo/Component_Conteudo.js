@@ -36,11 +36,11 @@ class  Component_Conteudo extends Component{
                     <Component_Skill/>
                     <Component_DesignPattern />
                     <Component_architectural/>
-                    
-
+                    <Component_Portfolio/>
                     <Component_Experience />
                     <Component_Education />
-                    <Component_Reference />
+                    {/* <Component_Reference /> */}
+                    
                     <Component_Contact />
                     <Component_Footer />
             </div>

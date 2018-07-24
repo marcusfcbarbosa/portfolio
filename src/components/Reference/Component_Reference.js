@@ -4,7 +4,9 @@ class Component_Reference extends Component {
 
     render(){
         return(
+
             <div className="section" id="reference">
+            {/*
             <div className="container cc-reference">
                 <div className="h4 mb-4 text-center title">References</div>
                 <div className="card" data-aos="zoom-in">
@@ -63,10 +65,21 @@ class Component_Reference extends Component {
                                 </div>
                             </div>
                         </div>
+
+
+
                         </div>
                     </div>
                 </div>
             </div>
+            
+            
+            
+            */}
+            
+
+
+
             </div>
         );
 
