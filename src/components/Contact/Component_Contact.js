@@ -14,6 +14,9 @@ class  Component_Contact extends Component {
                                  <div className="card mb-0" data-aos="zoom-in">
                                      <div className="h4 text-center title">Contact Me</div>
                                      <div className="row">
+
+
+                                     
                                          <div className="col-md-6">
                                          <div className="card-body">
                                              <form action="#" method="POST">
