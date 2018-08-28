@@ -8,7 +8,7 @@ class Component_Portfolio extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 ml-auto mr-auto">
-                            <div className="h4 text-center mb-4 title">Companies i´ve worked  </div>
+                            <div className="h4 text-center mb-4 title">Companies i´ve worked </div>
                             <div className="nav-align-center">
                             <ul className="nav nav-pills nav-pills-primary" role="tablist">
                                 <li className="nav-item"><a className="nav-link active" data-toggle="tab" href="#web-development" role="tablist">

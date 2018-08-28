@@ -39,6 +39,7 @@ class  Component_Conteudo extends Component{
                     <Component_Portfolio/>
                     <Component_Experience />
                     <Component_Education />
+                    
                     {/* <Component_Reference /> */}
                     
                     <Component_Contact />
