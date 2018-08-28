@@ -20,6 +20,7 @@ class  Component_architectural extends Component {
                         aria-valuemin="0" aria-valuemax="100" 
                         style={{flex: 0.8}}
                         >
+                        
                      </div>
                      <span className="progress-value">80%</span>
                   </div>
