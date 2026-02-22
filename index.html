@@ -5,355 +5,32 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Marcus Fernando Barbosa — .NET Developer</title>
   <meta name="description" content="Marcus Fernando Barbosa — .NET Developer portfolio/resume" />
-  <style>
-    :root{
-      --bg:#ffffff;
-      --text:#111827;
-      --muted:#6b7280;
-      --line:#e5e7eb;
-      --accent:#2563eb;
-      --accent-2:#0ea5e9;
-      --chip:#f3f4f6;
-      --shadow:0 10px 30px rgba(0,0,0,.08);
-      --radius:14px;
-      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-    }
-
-    *{ box-sizing:border-box; }
-    html,body{ height:100%; }
-    body{
-      margin:0;
-      font-family:var(--font);
-      color:var(--text);
-      background:linear-gradient(180deg,#f8fafc 0%, #ffffff 50%, #f8fafc 100%);
-    }
-
-    a{ color:inherit; text-decoration:none; }
-    a:hover{ text-decoration:underline; }
-
-    .page{
-      max-width:1050px;
-      margin:32px auto;
-      padding:0 16px;
-    }
-
-    .card{
-      background:var(--bg);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      overflow:hidden;
-    }
-
-    .topbar{
-      padding:22px 24px;
-      border-bottom:1px solid var(--line);
-      display:flex;
-      align-items:center;
-      gap:16px;
-    }
-
-    .avatar{
-  width:56px;
-  height:56px;
-  border-radius:999px;          
-  overflow:hidden;              
-  display:grid;
-  place-items:center;
-  background:linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
-  flex:0 0 auto;
-  user-select:none;
-}
-
-.avatar img{
-  width:100%;
-  height:100%;
-  object-fit:cover;             
-  object-position:center;       
-  display:block;
-}
-
-
-    .titleblock{ flex:1 1 auto; min-width:0; }
-    .name{
-      font-size:24px;
-      font-weight:800;
-      line-height:1.1;
-      margin:0;
-    }
-    .role{
-      margin:6px 0 0 0;
-      color:var(--muted);
-      font-weight:600;
-      font-size:14px;
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap:0;
-    }
-
-    .col{
-      padding:22px 24px 26px 24px;
-    }
-
-    .col.left{
-      border-right:1px solid var(--line);
-    }
-
-    .section{
-      margin:16px 0 0 0;
-      padding-top:14px;
-      border-top:1px solid var(--line);
-    }
-    .section:first-child{
-      margin-top:0;
-      padding-top:0;
-      border-top:none;
-    }
-
-    .section h2{
-      margin:0 0 10px 0;
-      font-size:14px;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-      color:#0f172a;
-      display:flex;
-      align-items:center;
-      gap:10px;
-    }
-
-    .dot{
-      width:8px; height:8px;
-      border-radius:50%;
-      background:var(--accent);
-      flex:0 0 auto;
-    }
-
-    .muted{ color:var(--muted); }
-
-    .profile-lines{
-      margin:0;
-      padding:0;
-      list-style:none;
-      display:grid;
-      gap:8px;
-      font-size:14px;
-      line-height:1.45;
-    }
-
-    .details{
-      display:grid;
-      gap:10px;
-      font-size:14px;
-    }
-    .detail-row{
-      display:flex;
-      gap:10px;
-      align-items:flex-start;
-    }
-    .detail-k{
-      width:86px;
-      color:var(--muted);
-      font-weight:700;
-      flex:0 0 auto;
-    }
-    .detail-v{
-      min-width:0;
-      word-break:break-word;
-    }
-
-    .link-list{
-      display:grid;
-      gap:10px;
-      font-size:14px;
-    }
-    .link-item{
-      display:flex;
-      gap:10px;
-      align-items:center;
-      padding:10px 12px;
-      border:1px solid var(--line);
-      border-radius:12px;
-      background:#fff;
-    }
-    .link-badge{
-      width:30px; height:30px;
-      border-radius:10px;
-      background:var(--chip);
-      display:grid;
-      place-items:center;
-      font-weight:800;
-      color:#334155;
-      flex:0 0 auto;
-      user-select:none;
-    }
-    .link-text{
-      display:grid;
-      gap:2px;
-      min-width:0;
-    }
-    .link-label{
-      font-weight:800;
-      font-size:13px;
-      line-height:1.2;
-    }
-    .link-url{
-      color:var(--muted);
-      font-size:12px;
-      overflow:hidden;
-      text-overflow:ellipsis;
-      white-space:nowrap;
-    }
-
-    .skills{
-      display:grid;
-      gap:12px;
-    }
-    .skill{
-      display:grid;
-      gap:6px;
-    }
-    .skill-top{
-      display:flex;
-      justify-content:space-between;
-      gap:10px;
-      font-size:13px;
-      font-weight:700;
-    }
-    .bar{
-      height:8px;
-      background:#eef2ff;
-      border-radius:999px;
-      overflow:hidden;
-      border:1px solid #e0e7ff;
-    }
-    .bar > span{
-      display:block;
-      height:100%;
-      width:0%;
-      background:linear-gradient(90deg, var(--accent) 0%, var(--accent-2) 100%);
-      border-radius:999px;
-    }
-
-    .chips{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-top:10px;
-    }
-    .chip{
-      background:var(--chip);
-      border:1px solid var(--line);
-      border-radius:999px;
-      padding:6px 10px;
-      font-size:12px;
-      font-weight:700;
-      color:#334155;
-    }
-
-    .timeline{
-      display:grid;
-      gap:14px;
-    }
-    .job{
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:14px 14px;
-      background:#fff;
-    }
-    .job-head{
-      display:flex;
-      justify-content:space-between;
-      gap:12px;
-      align-items:flex-start;
-      margin-bottom:6px;
-    }
-    .job-title{
-      font-weight:900;
-      font-size:14px;
-      line-height:1.2;
-      margin:0;
-    }
-    .job-meta{
-      font-size:12px;
-      color:var(--muted);
-      font-weight:700;
-      white-space:nowrap;
-    }
-    .job-sub{
-      margin:0 0 10px 0;
-      font-size:13px;
-      color:var(--muted);
-      line-height:1.35;
-    }
-    .job-list{
-      margin:0;
-      padding:0 0 0 18px;
-      color:#111827;
-      font-size:13px;
-      line-height:1.5;
-      display:grid;
-      gap:4px;
-    }
-
-    .ref{
-      display:grid;
-      gap:10px;
-      font-size:13px;
-    }
-    .ref-item{
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:12px 12px;
-      background:#fff;
-    }
-    .ref-name{
-      font-weight:900;
-      margin:0 0 4px 0;
-    }
-    .ref-contact{
-      margin:0;
-      color:var(--muted);
-      font-weight:700;
-      word-break:break-word;
-    }
-
-    .footer{
-      padding:14px 24px;
-      border-top:1px solid var(--line);
-      display:flex;
-      justify-content:space-between;
-      gap:10px;
-      color:var(--muted);
-      font-size:12px;
-    }
-
-    @media (max-width: 860px){
-      .grid{ grid-template-columns:1fr; }
-      .col.left{ border-right:none; border-bottom:1px solid var(--line); }
-      .detail-k{ width:78px; }
-    }
-
-    @media print{
-      body{ background:#fff; }
-      .page{ margin:0; padding:0; max-width:none; }
-      .card{ box-shadow:none; border-radius:0; border:none; }
-      a{ text-decoration:none; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="page">
     <article class="card">
       <header class="topbar">
-        <div class="avatar" aria-hidden="true"><a target="_blank" href="https://www.linkedin.com/in/marcus-fernando-aa404448/">
-		<img src="Imagem.png" alt="linkein">
-		</a></div>
+        <a class="avatar" href="https://www.linkedin.com/in/marcus-fernando-aa404448/" aria-label="Open LinkedIn profile">
+          <img src="imagem.png" alt="Marcus Fernando Barbosa" />
+        </a>
+
         <div class="titleblock">
           <h1 class="name">Marcus Fernando C Barbosa</h1>
-          <p class="role">.Net Developer</p>
+          <p class="role">.NET Developer</p>
+
+          <div class="headline">
+            <span>Microservices • Serverless • Cloud</span>
+            <span class="sep">•</span>
+            <span>AWS / Azure</span>
+            <span class="sep">•</span>
+            <span>Angular / React / Node.js</span>
+          </div>
+        </div>
+
+        <div class="cta">
+          <a class="btn" href="mailto:marcusfcbarbosa@hotmail.com">Email me</a>
+          <a class="btn ghost" href="https://github.com/marcusfcbarbosa" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </header>
 
@@ -364,8 +41,8 @@
             <ul class="profile-lines">
               <li>Brazilian.</li>
               <li>37 years old, married.</li>
-              <li>Major in Computer engineering class of 2012.</li>
-              <li>Working with development since 2011.</li>
+              <li>Computer Engineering (INATEL), class of 2012.</li>
+              <li>Working with software development since 2011.</li>
             </ul>
           </div>
 
@@ -375,41 +52,48 @@
             <div class="timeline">
               <div class="job">
                 <div class="job-head">
-                  <p class="job-title">.Net Developer at https://www.rendimento.com.br/, São Paulo</p>
+                  <div class="job-head-left">
+                    <p class="job-title">.NET Developer — Banco Rendimento</p>
+                    <a class="job-link" href="https://www.rendimento.com.br/" target="_blank" rel="noreferrer">rendimento.com.br</a>
+                    <span class="job-loc">São Paulo</span>
+                  </div>
                   <div class="job-meta">Nov 2017 — Present</div>
                 </div>
+
                 <p class="job-sub">
-                  Working with migration from legacy platforms to microservices structure and serverless applications.
+                  Migrating legacy platforms into microservices structure and serverless applications, improving scalability and delivery.
                 </p>
+
                 <ul class="job-list">
-                  <li>.Net Framework 4.7</li>
-                  <li>.Net Core 3.1 / 6.0</li>
-                  <li>Angular CLI 7 / 13</li>
-                  <li>React</li>
-                  <li>Node.js / Nest.js</li>
-                  <li>SQL Server / MongoDB / DynamoDB</li>
-                  <li>Azure (Functions, Storage, Pipelines)</li>
-                  <li>AWS (Lambdas, SNS, SQS, S3)</li>
-                  <li>Docker / Docker Compose</li>
-                  <li>RabbitMQ</li>
+                  <li>.NET Framework 4.7, .NET Core 3.1 / 6.0</li>
+                  <li>Angular CLI 7 / 13, React</li>
+                  <li>Node.js / NestJS</li>
+                  <li>SQL Server, MongoDB, DynamoDB</li>
+                  <li>Azure (Functions, Storage, Pipelines) • AWS (Lambda, SNS, SQS, S3)</li>
+                  <li>Docker / Docker Compose • RabbitMQ</li>
                   <li>xUnit • SOLID • CQRS • MediatR</li>
                 </ul>
               </div>
 
               <div class="job">
                 <div class="job-head">
-                  <p class="job-title">.Net Developer at https://pagolivre.com.br/, São Paulo</p>
+                  <div class="job-head-left">
+                    <p class="job-title">.NET Developer — PagoLivre</p>
+                    <a class="job-link" href="https://pagolivre.com.br/" target="_blank" rel="noreferrer">pagolivre.com.br</a>
+                    <span class="job-loc">São Paulo</span>
+                  </div>
                   <div class="job-meta">Jun 2016 — Nov 2017</div>
                 </div>
+
                 <p class="job-sub">
-                  Giving support for web API’s that the application consumed.
+                  Supported Web APIs consumed by internal applications, improving reliability and incident response.
                 </p>
+
                 <ul class="job-list">
-                  <li>Asp.net MVC Applications</li>
-                  <li>Razor</li>
+                  <li>ASP.NET MVC • Razor</li>
                   <li>AngularJS</li>
-                  <li>WebAPI’s • REST • HTTP • gRPC</li>
-                  <li>Azure • Azure Pipelines • Azure CI/CD</li>
+                  <li>Web APIs • REST • HTTP • gRPC</li>
+                  <li>Azure • Azure Pipelines • CI/CD</li>
                   <li>xUnit • TDD</li>
                   <li>SQL Server</li>
                 </ul>
@@ -417,12 +101,18 @@
 
               <div class="job">
                 <div class="job-head">
-                  <p class="job-title">.Net Developer at https://sebrae.com.br/sites/PortalSebrae/, São Paulo</p>
+                  <div class="job-head-left">
+                    <p class="job-title">.NET Developer — SEBRAE</p>
+                    <a class="job-link" href="https://sebrae.com.br/sites/PortalSebrae/" target="_blank" rel="noreferrer">sebrae.com.br</a>
+                    <span class="job-loc">São Paulo</span>
+                  </div>
                   <div class="job-meta">Nov 2015 — Jun 2016</div>
                 </div>
+
                 <p class="job-sub">Support for legacy applications.</p>
+
                 <ul class="job-list">
-                  <li>WebForms • ASP</li>
+                  <li>WebForms • Classic ASP</li>
                   <li>SQL Server • IIS</li>
                   <li>BackOffice</li>
                   <li>VB.NET • jQuery</li>
@@ -431,45 +121,57 @@
 
               <div class="job">
                 <div class="job-head">
-                  <p class="job-title">.Net Developer at https://www.eeicon.com.br/, São Paulo</p>
+                  <div class="job-head-left">
+                    <p class="job-title">.NET Developer — EEIcon</p>
+                    <a class="job-link" href="https://www.eeicon.com.br/" target="_blank" rel="noreferrer">eeicon.com.br</a>
+                    <span class="job-loc">São Paulo</span>
+                  </div>
                   <div class="job-meta">Apr 2013 — Nov 2015</div>
                 </div>
-                <p class="job-sub">Developing applications for monitoring public finances.</p>
+
+                <p class="job-sub">Developed applications for monitoring public finances.</p>
+
                 <ul class="job-list">
-                  <li>WebForms</li>
-                  <li>IIS</li>
-                  <li>ASP.NET MVC</li>
-                  <li>Razor</li>
-                  <li>WebAPI’s</li>
+                  <li>WebForms • IIS</li>
+                  <li>ASP.NET MVC • Razor</li>
+                  <li>Web APIs</li>
                   <li>SQL Server</li>
                 </ul>
               </div>
 
               <div class="job">
                 <div class="job-head">
-                  <p class="job-title">Junior .Net Developer at https://www.clmcontroller.com.br/, São Paulo</p>
+                  <div class="job-head-left">
+                    <p class="job-title">Junior .NET Developer — CLM Controller</p>
+                    <a class="job-link" href="https://www.clmcontroller.com.br/" target="_blank" rel="noreferrer">clmcontroller.com.br</a>
+                    <span class="job-loc">São Paulo</span>
+                  </div>
                   <div class="job-meta">Jan 2013 — Jun 2013</div>
                 </div>
-                <p class="job-sub">Console and windows forms applications.</p>
+
+                <p class="job-sub">Console and Windows Forms applications.</p>
+
                 <ul class="job-list">
-                  <li>Excel</li>
-                  <li>SQL Server</li>
-                  <li>Windows Forms</li>
+                  <li>Excel • SQL Server • Windows Forms</li>
                   <li>C#</li>
                 </ul>
               </div>
 
               <div class="job">
                 <div class="job-head">
-                  <p class="job-title">Intern in development at https://ecomenergia.com.br/, São Paulo</p>
+                  <div class="job-head-left">
+                    <p class="job-title">Intern in Development — Ecom Energia</p>
+                    <a class="job-link" href="https://ecomenergia.com.br/" target="_blank" rel="noreferrer">ecomenergia.com.br</a>
+                    <span class="job-loc">São Paulo</span>
+                  </div>
                   <div class="job-meta">Jan 2012 — Dec 2012</div>
                 </div>
-                <p class="job-sub">Developing Back-office system.</p>
+
+                <p class="job-sub">Developing back-office system.</p>
+
                 <ul class="job-list">
-                  <li>Silverlight</li>
-                  <li>XAML</li>
-                  <li>SQL Server</li>
-                  <li>C#</li>
+                  <li>Silverlight • XAML</li>
+                  <li>SQL Server • C#</li>
                 </ul>
               </div>
             </div>
@@ -477,9 +179,12 @@
 
           <div class="section">
             <h2><span class="dot"></span>Education</h2>
-            <div class="job" style="padding:12px 14px;">
-              <div class="job-head" style="margin-bottom:2px;">
-                <p class="job-title">Computer engineering, INATEL, Santa Rita do Sapucaí</p>
+            <div class="job compact">
+              <div class="job-head">
+                <div class="job-head-left">
+                  <p class="job-title">Computer Engineering — INATEL</p>
+                  <span class="job-loc">Santa Rita do Sapucaí</span>
+                </div>
                 <div class="job-meta">Jan 2008 — Dec 2012</div>
               </div>
             </div>
@@ -489,11 +194,11 @@
             <h2><span class="dot"></span>References</h2>
             <div class="ref">
               <div class="ref-item">
-                <p class="ref-name">Fernando Costa from Google</p>
+                <p class="ref-name">Fernando Costa — Google</p>
                 <p class="ref-contact">fernandocosta@google.com</p>
               </div>
               <div class="ref-item">
-                <p class="ref-name">Alex Ribeiro from Banco Rendimento</p>
+                <p class="ref-name">Alex Ribeiro — Banco Rendimento</p>
                 <p class="ref-contact">+55 11 93015 4688</p>
               </div>
             </div>
@@ -510,7 +215,7 @@
               </div>
               <div class="detail-row">
                 <div class="detail-k">Phone</div>
-                <div class="detail-v">+55 (11)98660-2829</div>
+                <div class="detail-v">+55 (11) 98660-2829</div>
               </div>
               <div class="detail-row">
                 <div class="detail-k">Email</div>
@@ -523,10 +228,9 @@
 
           <div class="section">
             <h2><span class="dot"></span>Links</h2>
-
             <div class="link-list">
               <a class="link-item" href="https://github.com/marcusfcbarbosa" target="_blank" rel="noreferrer">
-                <div class="link-badge" aria-hidden="true">GH</div>
+                <div class="link-badge">GH</div>
                 <div class="link-text">
                   <div class="link-label">Repo</div>
                   <div class="link-url">github.com/marcusfcbarbosa</div>
@@ -534,7 +238,7 @@
               </a>
 
               <a class="link-item" href="https://www.linkedin.com/in/marcus-fernando-aa404448/" target="_blank" rel="noreferrer">
-                <div class="link-badge" aria-hidden="true">in</div>
+                <div class="link-badge">in</div>
                 <div class="link-text">
                   <div class="link-label">LinkedIn</div>
                   <div class="link-url">linkedin.com/in/marcus-fernando-aa404448</div>
@@ -542,7 +246,7 @@
               </a>
 
               <a class="link-item" href="https://www.facebook.com/marcus.fernando.77" target="_blank" rel="noreferrer">
-                <div class="link-badge" aria-hidden="true">f</div>
+                <div class="link-badge">f</div>
                 <div class="link-text">
                   <div class="link-label">Facebook</div>
                   <div class="link-url">facebook.com/marcus.fernando.77</div>
@@ -550,7 +254,7 @@
               </a>
 
               <a class="link-item" href="https://www.credly.com/badges/64a31256-cf2c-4fd2-907b-bfdb90f85c34/linked_in_profile" target="_blank" rel="noreferrer">
-                <div class="link-badge" aria-hidden="true">C#</div>
+                <div class="link-badge">C#</div>
                 <div class="link-text">
                   <div class="link-label">Exam 483: Programming in C#</div>
                   <div class="link-url">credly.com/badges/64a31256-cf2c-4fd2-907b-bfdb90f85c34</div>
@@ -561,53 +265,43 @@
 
           <div class="section">
             <h2><span class="dot"></span>Skills</h2>
-
             <div class="skills">
               <div class="skill">
                 <div class="skill-top"><span>Node.js</span><span class="muted">Advanced</span></div>
                 <div class="bar"><span style="width:78%"></span></div>
               </div>
-
               <div class="skill">
                 <div class="skill-top"><span>AWS</span><span class="muted">Advanced</span></div>
                 <div class="bar"><span style="width:80%"></span></div>
               </div>
-
               <div class="skill">
                 <div class="skill-top"><span>Lambda</span><span class="muted">Advanced</span></div>
                 <div class="bar"><span style="width:76%"></span></div>
               </div>
-
               <div class="skill">
                 <div class="skill-top"><span>Docker</span><span class="muted">Advanced</span></div>
                 <div class="bar"><span style="width:82%"></span></div>
               </div>
-
               <div class="skill">
                 <div class="skill-top"><span>Docker Compose</span><span class="muted">Advanced</span></div>
                 <div class="bar"><span style="width:78%"></span></div>
               </div>
-
               <div class="skill">
                 <div class="skill-top"><span>C#</span><span class="muted">Expert</span></div>
                 <div class="bar"><span style="width:90%"></span></div>
               </div>
-
               <div class="skill">
                 <div class="skill-top"><span>JavaScript</span><span class="muted">Advanced</span></div>
                 <div class="bar"><span style="width:82%"></span></div>
               </div>
-
               <div class="skill">
                 <div class="skill-top"><span>Angular</span><span class="muted">Advanced</span></div>
                 <div class="bar"><span style="width:84%"></span></div>
               </div>
-
               <div class="skill">
                 <div class="skill-top"><span>Azure</span><span class="muted">Advanced</span></div>
                 <div class="bar"><span style="width:80%"></span></div>
               </div>
-
               <div class="skill">
                 <div class="skill-top"><span>React</span><span class="muted">Intermediate</span></div>
                 <div class="bar"><span style="width:62%"></span></div>
@@ -657,4 +351,3 @@
   </script>
 </body>
 </html>
-
